@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+* {
+  font-family: "Geist", sans-serif;
+  -webkit-font-smoothing: antialiased !important;
+}
