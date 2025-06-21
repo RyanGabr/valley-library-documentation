@@ -5,9 +5,9 @@ import { useTheme } from "./components/theme-provider";
 import { Moon, Sun } from "lucide-react";
 import { ArrowRight, Github, Menu, X } from "@geist-ui/icons";
 import { useState } from "react";
-import "./styles/global.css";
 import { Switch } from "./components/ui/switch";
 import { Separator } from "./components/ui/separator";
+import "./styles/global.css";
 
 export function Layout() {
   const { theme, setTheme } = useTheme();
@@ -21,15 +21,16 @@ export function Layout() {
 
   return (
     <>
-      <div className="w-full bg-background py-4 px-2">
+      <div className="w-full bg-background py-4 px-2 fixed top-0">
         <div className="w-11/12 2xl:w-8/12 mx-auto flex items-center justify-between">
           <div className="flex items-center gap-10">
-            <span className="text-xl font-medium tracking-tight">LOGO</span>
+            <span className="text-xl font-semibold tracking-tight">Valley</span>
             <ul className="items-center text-foreground/80 hidden lg:flex">
               <li>
                 <a
                   href="/documentation"
-                  className="hover:bg-foreground/5 transition-colors py-1.5 px-5 rounded-full"
+                  data-theme={theme}
+                  className="data-[theme=light]:hover:bg-foreground/5 hover:bg-foreground/10 transition-colors py-1.5 px-5 rounded-md"
                 >
                   Documentação
                 </a>
@@ -37,7 +38,8 @@ export function Layout() {
               <li>
                 <a
                   href="/developers"
-                  className="hover:bg-foreground/5 transition-colors py-1.5 px-5 rounded-full"
+                  data-theme={theme}
+                  className="data-[theme=light]:hover:bg-foreground/5 hover:bg-foreground/10 transition-colors py-1.5 px-5 rounded-md"
                 >
                   Desenvolvedores
                 </a>
@@ -107,7 +109,9 @@ export function Layout() {
                           </a>
                         </li>
                         <li className="flex items-center justify-between">
-                          <span className="text-foreground/60">Tema Escuro</span>
+                          <span className="text-foreground/60">
+                            Tema Escuro
+                          </span>
                           <Switch
                             className="h-5"
                             id="dark-theme"
@@ -124,9 +128,7 @@ export function Layout() {
                           to="https://github.com/RyanGabr/valley-library-documentation"
                           target="_blank"
                         >
-                          <Button
-                            className="w-full h-12 text-base"
-                          >
+                          <Button className="w-full h-12 text-base">
                             <Github />
                             GitHub da documentação
                           </Button>
