@@ -18,4 +18,4 @@ O Projeto Valley Library foi desenvolvido por:
 
 Para acessar a documentação e visualizar nosso projeto, basta clicar em "Ir para a documentação".
 
-<button style="background-color: whitesmoke; border: none; padding: 6px 20px; border-radius: 6px; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1)">🚀 Ir para a documentação</button>
+<button style="background-color: whitesmoke; border: none; padding: 6px 20px; border-radius: 6px; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1)">🚀 Em desenvolvimento</button>
