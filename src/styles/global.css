@@ -4,7 +4,8 @@
 @custom-variant dark (&:is(.dark *));
 
 * {
-  font-family: "Geist", sans-serif;
+  /* font-family: "Geist", sans-serif; */
+  font-family: "inter-variable", sans-serif;
   -webkit-font-smoothing: antialiased !important;
 }
 
@@ -49,7 +50,7 @@
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
-  --foreground: oklch(0.141 0.005 285.823);
+  --foreground: oklch(0.141 0.005 285.823 / 90.81%);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.141 0.005 285.823);
   --popover: oklch(1 0 0);
@@ -122,4 +123,49 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.font-mono {
+  font-family: "Geist Mono";
+}
+
+.root::before{
+  content: "";
+  position: absolute;
+  background-color: var(--color-foreground);
+  opacity: 0.1;
+  height: 1px;
+  right: 0;
+  left: 0;
+  top: 5%;
+}
+.root::after{
+  content: "";
+  position: absolute;
+  background-color: var(--color-foreground);
+  opacity: 0.1;
+  width: 1px;
+  top: 0;
+  bottom: 0;
+  left: 5%;
+}
+.root-layout::before {
+  content: "";
+  position: absolute;
+  background-color: var(--color-foreground);
+  opacity: 0.1;
+  width: 1px;
+  top: 0;
+  bottom: 0;
+  right: 5%;
+}
+.root-layout::after {
+  content: "";
+  position: absolute;
+  background-color: var(--color-foreground);
+  opacity: 0.1;
+  height: 1px;
+  right: 0;
+  left: 0;
+  bottom: 5%;
 }
