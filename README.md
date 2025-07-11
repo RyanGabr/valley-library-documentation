@@ -18,4 +18,4 @@ O Projeto Valley Library foi desenvolvido por:
 
 Para acessar a documentação e visualizar nosso projeto, basta clicar em "Ir para a documentação".
 
-- [Ir para a documentação](https://docsvalleylibrary.vercel.app)
+- <a href="https://docsvalleylibrary.vercel.app" target="_blank">🚀 Ir para a documentação</a>
