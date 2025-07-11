@@ -1,6 +1,6 @@
 import { AlignLeft } from "@geist-ui/icons";
 import DashboardVideo from "@/assets/videos/dashboard.mov";
-import UsersVideo from "@/assets/videos/usuários.mov";
+import UsersVideo from "@/assets/videos/usuarios.mov";
 import BooksVideo from "@/assets/videos/livros.mov";
 import ShoppingVideo from "@/assets/videos/compras.mov";
 import { AutoPlayVideo } from "@/components/autoplay-video";

@@ -7,7 +7,10 @@ export function Developers() {
   return (
     <div className="w-full mt-10 lg:mt-20 mb-10 space-y-20">
       <div className="w-11/12 2xl:w-7/12 mx-auto">
-        <a href="/" className="flex items-center font-medium hover:text-foreground/80 transition-colors">
+        <a
+          href="/"
+          className="flex items-center font-medium hover:text-foreground/80 transition-colors"
+        >
           <ChevronLeft />
           Voltar para página inicial
         </a>
@@ -16,7 +19,7 @@ export function Developers() {
         <div
           data-theme={theme}
           className="font-mono bg-emerald-400/20 text-emerald-400 rounded-md px-2 py-0.5
-          data-[theme=light]:bg-emerald-600 flex items-center gap-1 text-sm"
+          data-[theme=light]:text-emerald-900 flex items-center gap-1 text-sm"
         >
           <Box size={14} />
           devs
